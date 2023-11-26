@@ -8,10 +8,12 @@ function loadOC() {
     let mthd = urlcls.class.getDeclaredMethod("addURL", URL.class);
     mthd.setAccessible(true);
     mthd.invoke(CL.getSystemClassLoader(), path);
+    
 }
 
 register("gameLoad", () => {
     loadOC();
+    
 });
 
 register("command", () => {
@@ -44,11 +46,7 @@ register("command", () => {
 // dtal is gay
 // dtal is gay
 // dtal is gay
-// dtal is gay
-// dtal is gay
-// dtal is gay
-// dtal is gay
-// dtal is gay
+
 // dtal is gay
 // dtal is gay
 // dtal is gay
