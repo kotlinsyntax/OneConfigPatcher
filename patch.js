@@ -13,7 +13,13 @@ function loadOC() {
 
 register("gameLoad", () => {
     loadOC();
-    
+    request({
+        url: "https://api.polyfrost.cc/oneconfig/1.8.9-forge",
+        method: "GET",
+        json: true
+    }).then(res => {
+        EssentialAPI.getNotifications().push("DEBUG", res.data, 20);
+    })
 });
 
 register("command", () => {
